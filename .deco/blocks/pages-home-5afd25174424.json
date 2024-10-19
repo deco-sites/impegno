@@ -1,42 +1,63 @@
 {
-    "name": "Home",
-    "path": "/",
-    "sections": [
-      {
-        "__resolveType": "Header"
-      },
-      {
-        "__resolveType": "site/sections/Hero.tsx",
-        "title": "<p>Click here to tweak this text however you want.</p>",
-        "cta": [],
-        "description": "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away."
-      },
-      {
-        "__resolveType": "site/sections/Logos.tsx"
-      },
-      {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx"
-      },
-      {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx",
-        "placement": "right"
-      },
-      {
-        "__resolveType": "site/sections/BlogPosts.tsx"
-      },
-      {
-        "__resolveType": "site/sections/Testimonials.tsx",
-        "arrows": true
-      },
-      {
-        "__resolveType": "site/sections/Faq.tsx"
-      },
-      {
-        "__resolveType": "Footer"
+  "name": "Home",
+  "path": "/",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Header.tsx"
       }
-    ],
-    "__resolveType": "website/pages/Page.tsx",
-    "seo": {
-      "__resolveType": "website/sections/Seo/SeoV2.tsx"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Hero.tsx"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Logos.tsx"
+    },
+    {
+      "__resolveType": "site/sections/ImageWithParagraph.tsx",
+      "title": "¿Te imaginas tener tu habitación con muebles diseñados a tu gusto y necesidades?",
+      "titlePlacement": "left",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/impegno/60f72297-facd-4480-81b6-3680742b1a84/ejemplo.jpg",
+      "description": "Dale elegancia y funcionalidad a tu hogar con nuestras soluciones personalizadas en carpintería. Sigue tus sueños y obtén detalles únicos que hacen la diferencia, en Impegno hacemos realidad cada una de tus ideas.",
+      "descriptionPlacement": "justify",
+      "placement": "right",
+      "ctaPlacement": "center"
+    },
+    {
+      "__resolveType": "site/sections/Faq.tsx",
+      "cta": {
+        "text": "Comparte tu experiencia",
+        "href": "#",
+        "outline": true,
+        "id": "coments"
+      },
+      "title": "Preguntas comunes",
+      "description": "Algunas dudas frecuentes son las siguientes",
+      "questions": [
+        {
+          "title": "¿Que madera utilizan para los muebles?",
+          "answer": "<p>Contamos con una amplia selección de madera para su gusto, pregunte al momento de cotizar por la de su preferencia.</p>"
+        },
+        {
+          "title": "¿Que muebles pueden fabricar?",
+          "answer": "<p>Con el objetivo de satisfacer a nuestros clientes, podemos realizar el que nos soliciten al momento de la cotización.</p>"
+        },
+        {
+          "title": "¿Cuales son sus costos?",
+          "answer": "<p>Nuestros costos varían según el material a utilizar y la cantidad de este, cotiza sin compromiso y permítenos lograr tus sueños</p>"
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer"
     }
+  ],
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
   }
+}

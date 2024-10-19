@@ -29,14 +29,13 @@ const PLACEMENT = {
 };
 
 export default function HeroFlats({
-  title = "Click here to tweak this text however you want.",
+  title = "¡Dale a tu hogar el estilo y elegancia que se merece!",
   description =
-    "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away.",
+  "Con #Impegno puedes personalizar tus espacios, transformar tu hogar y darle un toque de elegancia y orden a tu habitación.",
   image,
   placement = "left",
   cta = [
-    { id: "change-me-1", href: "/", text: "Change me", outline: false },
-    { id: "change-me-2", href: "/", text: "Change me", outline: true },
+    { id: "Cotizabtn", href: "/", text: "Cotiza con nosotros", outline: false }
   ],
 }: Props) {
   return (
@@ -74,7 +73,7 @@ export default function HeroFlats({
               }}
             >
             </div>
-            <p class="text-lg md:text-md leading-[150%]">
+            <p class="text-xl md:text-md leading-[150%]">
               {description}
             </p>
             <div class="flex items-center gap-3">
@@ -84,7 +83,7 @@ export default function HeroFlats({
                   id={item?.id}
                   href={item?.href}
                   target={item?.href.includes("http") ? "_blank" : "_self"}
-                  class={`font-normal btn btn-primary ${
+                  class={`text-base font-normal btn btn-primary ${
                     item.outline && "btn-outline"
                   }`}
                 >

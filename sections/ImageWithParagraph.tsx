@@ -50,8 +50,8 @@ export default function ImageWithParagraph({
   placement = "left",
   disableSpacing,
   cta = [
-    { id: "change-me-1", href: "/", text: "Change me", style: "Outline" },
-    { id: "change-me-2", href: "/", text: "Change me", style: "Ghost" },
+    { id: "Contacy", href: "/", text: "Contactanos", style: "Outline" },
+    { id: "galery", href: "/", text: "Nuestros trabajos", style: "Ghost" },
   ],
   ctaPlacement = "left",
 }: Props) {

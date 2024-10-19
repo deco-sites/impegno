@@ -14,12 +14,12 @@ export interface Props {
 
 const IMG_PLACEHODLER = Array(30).fill(0).map(() => ({
   src:
-    "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/03fbcc78-ca86-4616-a59a-b8aa18331a9c",
-  altText: "Logo",
+    "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/impegno/dc119955-2751-4d68-80da-5b448c074eb7/impegno-nobg.png",
+  altText: "Logo Impegno",
 }));
 
 export default function Logos({
-  title = "Edit this heading however you want",
+  title = "✨Transforma tus espacios con Impegno Carpintería✨",
   logos = IMG_PLACEHODLER,
 }: Props) {
   const slideContent = (
@@ -29,8 +29,8 @@ export default function Logos({
           <Image
             src={logo.src || ""}
             alt={logo.altText || ""}
-            width={110}
-            height={25}
+            width={125}
+            height={21}
           />
         );
       })}

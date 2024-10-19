@@ -26,19 +26,19 @@ export interface Nav {
 export default function Header({
   logo = {
     src:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/67120bcd-936a-4ea5-a760-02ed5c4a3d04",
-    alt: "Logo",
+      "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/impegno/dc119955-2751-4d68-80da-5b448c074eb7/impegno-nobg.png",
+    alt: "Logo impegno",
   },
   navigation = {
     links: [
-      { label: "Home", url: "/" },
-      { label: "About us", url: "/" },
-      { label: "Princing", url: "/" },
-      { label: "Contact", url: "/" },
+      { label: "Inicio", url: "/" },
+      { label: "Nosotros", url: "/" },
+      { label: "Galeria", url: "/" },
+      { label: "Contacto", url: "/" },
     ],
     buttons: [
-      { id: "change-me-1", href: "/", text: "Change me", outline: false },
-      { id: "change-me-2", href: "/", text: "Change me", outline: true },
+      { id: "Whatsapp-1", href: "/", text: "WhatsApp", outline: false },
+      { id: "WhatsApp-2", href: "/", text: "WhatsApp", outline: true },
     ],
   },
 }: Nav) {
@@ -49,7 +49,7 @@ export default function Header({
       {/* main content */}
       <div class="drawer-content container lg:px-0 px-4 flex gap-8 items-center justify-between py-4">
         <a href="/">
-          <Image src={logo.src || ""} width={100} height={28} alt={logo.alt} />
+          <Image src={logo.src || ""} width={125} height={21} alt={logo.alt} />
         </a>
 
         <div class="hidden items-center justify-between lg:flex w-full">
@@ -104,8 +104,8 @@ export default function Header({
           <a class="p-4" href="/">
             <Image
               src={logo.src || ""}
-              width={100}
-              height={28}
+              width={125}
+              height={21}
               alt={logo.alt}
             />
           </a>

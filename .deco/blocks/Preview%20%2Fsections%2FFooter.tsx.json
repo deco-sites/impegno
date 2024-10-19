@@ -1,1 +1,13 @@
-{"__resolveType":"site/sections/Footer.tsx"}
+{
+  "__resolveType": "site/sections/Footer.tsx",
+  "links": [],
+  "bottomLinks": [],
+  "social": [],
+  "subscribe": {
+    "title": "asd",
+    "description": "asd"
+  },
+  "logo": {
+    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/impegno/dc119955-2751-4d68-80da-5b448c074eb7/impegno-nobg.png"
+  }
+}

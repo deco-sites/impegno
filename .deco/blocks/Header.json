@@ -1,1 +1,10 @@
-{"__resolveType":"site/sections/Header.tsx","navigation":{"links":[],"buttons":[]}}
+{
+  "__resolveType": "site/sections/Header.tsx",
+  "navigation": {
+    "links": [],
+    "buttons": []
+  },
+  "logo": {
+    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/impegno/dc119955-2751-4d68-80da-5b448c074eb7/impegno-nobg.png"
+  }
+}
